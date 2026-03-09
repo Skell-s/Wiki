@@ -1,0 +1,66 @@
+@font-face {
+    font-family: 'SF Pro';
+    src: url('./font.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'SF Pro', sans-serif;
+    font-size: larger;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+main {
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 17px;
+}
+
+a {
+    min-width: 300px;
+    max-width: 300px;
+    min-height: 250px;
+    max-height: 250px;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 0.6fr 1.4fr;
+}
+
+@media (max-width: 768px) {
+    main {
+        padding-left: 10%;
+        padding-right: 10%;
+        flex-direction: column;
+    }
+
+    a {
+        min-width: 200px;
+        max-width: none;
+        min-height: 250px;
+        max-height: 250px;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
