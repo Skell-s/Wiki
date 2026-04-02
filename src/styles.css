@@ -6,6 +6,18 @@
     font-display: swap;
 }
 
+:root {
+    --primary-color: #8a2be2;
+}
+
+.titulo {
+    color: var(--primary-color);
+}
+
+.centrado {
+    text-align: center;
+}
+
 body {
     font-family: 'SF Pro', sans-serif;
     font-size: larger;
@@ -16,7 +28,12 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 0;
+    padding-top: 20px;
+
+    img {
+        height: 100px;
+    }
 }
 
 main {
@@ -28,21 +45,69 @@ main {
     gap: 17px;
 }
 
-a {
+.article {
     min-width: 300px;
     max-width: 300px;
     min-height: 250px;
     max-height: 250px;
     text-decoration: none;
     color: black;
-    border: 1px solid black;
+    border: 1px solid var(--primary-color);
     border-radius: 25px;
     padding: 10px;
+
+    p {
+        text-align: center;
+    }
+
+    hr { width: auto;}
+
+    h2 {
+        text-align: center;
+    }
 }
 
 footer {
     display: grid;
     grid-template-columns: 0.6fr 1.4fr;
+    padding: 40px;
+    padding-top: 0;
+    gap: 40px
+}
+
+hr {
+    width: 90vw;
+    margin: 20px;
+}
+
+#back {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#back-up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article-content {
+    width: auto;
+    padding-left: 25%;
+    padding-right: 25%;
 }
 
 @media (max-width: 768px) {
@@ -52,11 +117,20 @@ footer {
         flex-direction: column;
     }
 
-    a {
+    .article {
         min-width: 200px;
         max-width: none;
         min-height: 250px;
         max-height: 250px;
+    }
+
+    .article-content {
+        width: auto;
+        padding: 0 5% 0 5%;
+        
+        article {
+            width: 95%;
+        }
     }
 
     footer {

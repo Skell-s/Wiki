@@ -1,67 +1,182 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Metadata -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-Commerce | Skell's Wiki</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" href="./../img/favicon.png">
-    <script src="script.js" defer></script>
-    <!-- 
-    ASEGURESE DE INCORPORAR METADATOS PARA UN SEO EFICIENTE, GRACIAS
-    -->
+    <title>Python | Skell's eWiki</title>
+    <!-- Vinculaciones -->
+    <link rel="stylesheet" href="./../src/styles.css">
+    <link rel="icon" type="image/png" href="./../img/favicon.png">
+    <!-- Scripts -->
 </head>
 <body>
-    <header>
-        <h1>Skell's Wiki</h1>
-        <nav>
-            <a href="./../index.html">Volver</a>
-        </nav>
+    <header id="up">
+        <img src="./../img/logotipo.png" alt="Skell's eWiki Logo" class="logo">
     </header>
-    <main>
-        <section>
-            <h2>E-Commerce: La Frontera Digital del Comercio</h2>
-            <p>El comercio electrónico (Electronic Commerce) es el modelo de negocio basado en la compra, venta y distribución de bienes o servicios a través de redes informáticas. No se limita a la transacción final, sino que abarca la gestión de la cadena de suministro, el marketing digital y el procesamiento de datos a gran escala.</p>
-            <h3>Historia y Evolución</h3>
-            <ul>
-                <li><strong>Origen (Años 70):</strong> Comenzó con el EDI (Electronic Data Interchange) y el EFT (Electronic Funds Transfer), permitiendo a las empresas enviar documentos comerciales de forma electrónica.</li>
-                <li><strong>La Revolución de los 90:</strong> Con la llegada de la World Wide Web, surgen gigantes como Amazon y eBay (1995), transformando el mercado minorista para siempre.</li>
-                <li><strong>Era Mobile y Omnicanalidad:</strong> Actualmente, el comercio se integra en redes sociales y dispositivos móviles, permitiendo compras instantáneas desde cualquier lugar.</li>
-            </ul>
-            <h3>Ventajas y Desventajas</h3>
-            <table>
-                <tr>
-                    <th>Ventajas</th>
-                    <th>Desventajas</th>
-                </tr>
-                <tr>
-                    <td>Disponibilidad 24/7 y alcance global.</td>
-                    <td>Falta de contacto físico con el producto.</td>
-                </tr>
-                <tr>
-                    <td>Reducción de costos operativos (sin locales físicos).</td>
-                    <td>Dependencia absoluta de la logística y conexión.</td>
-                </tr>
-                <tr>
-                    <td>Personalización basada en datos del usuario.</td>
-                    <td>Riesgos de ciberseguridad y fraude.</td>
-                </tr>
-            </table>
-        </section>
-        <footer>
-            <hr>
-            <h4>Bibliografía y Recursos</h4>
-            <ul>
-                <li><a href="https://www.wto.org/english/tratop_e/ecom_e/ecom_e.htm">Electronic commerce - World Trade Organization (WTO)</a></li>
-                <li><a href="https://www.juntadeandalucia.es/empleocapacitacionycomercio/comercio/portal/comercio-electronico/definicion-y-tipos/">Guía de Comercio Electrónico y Aspectos Legales</a></li>
-            </ul>
-            <p><b>Autor:</b> Robert Rodríguez "Skellent"</p>
-            <p><b>Fecha de Publicación:</b> 8/3/2026</p>
-        </footer>
+    <hr>
+    <main class="article-content">
+        <article>
+            <div>
+                <h1 class="titulo centrado">Python</h1>
+            </div>
+            <nav>
+                <h2 class="titulo">Contenido</h2>
+                <ul>
+                    <li><a href="#definicion-y-concepto">1. Definición y concepto</a></li>
+                    <li><a href="#historia-y-desarrollo">2. Historia y desarrollo</a>
+                        <ul>
+                            <li><a href="#historia-origenes">2.1 Orígenes: El proyecto navideño de Guido van Rossum</a></li>
+                            <li><a href="#historia-evolucion">2.2 Evolución: Python 2, Python 3 y la transición</a></li>
+                            <li><a href="#historia-hitos">2.3 Hitos clave y cronología</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#principios-y-caracteristicas">3. Principios de funcionamiento y características principales</a>
+                        <ul>
+                            <li><a href="#principios-filosofia">3.1 Filosofía de diseño: El Zen de Python</a></li>
+                            <li><a href="#principios-sintaxis">3.2 Sintaxis y características técnicas</a></li>
+                            <li><a href="#principios-paradigmas">3.3 Paradigmas de programación</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#impacto-y-legado">4. Impacto y legado</a>
+                        <ul>
+                            <li><a href="#impacto-industria">4.1 Impacto en la industria y la economía</a></li>
+                            <li><a href="#impacto-educativo">4.2 Impacto educativo y social</a></li>
+                            <li><a href="#debate-futuro">4.3 Debates, controversias y futuro</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#vease-tambien">5. Véase también</a></li>
+                    <li><a href="#bibliografia">6. Bibliografía y fuentes</a></li>
+                </ul>
+            </nav>
+
+            <section id="definicion-y-concepto">
+                <h2 class="titulo">1. Definición y concepto</h2>
+                <p>Python es un lenguaje de programación de alto nivel, interpretado, de propósito general y de código abierto. Creado por el informático neerlandés <strong>Guido van Rossum</strong> a finales de la década de 1980, fue diseñado con una filosofía que prioriza la legibilidad del código y una sintaxis clara y expresiva, permitiendo a los programadores expresar conceptos complejos en menos líneas de código que en otros lenguajes como C++ o Java[reference:0][reference:1]. El nombre "Python" no proviene de la serpiente, sino del grupo de comedia británico Monty Python, del cual Van Rossum era un gran admirador[reference:2].</p>
+                <p>Su relevancia e importancia en la actualidad son incuestionables. Python se ha consolidado como el lenguaje de programación más popular y versátil del mundo, utilizado en campos que van desde el desarrollo web (con frameworks como Django y Flask) y la automatización de tareas, hasta la ciencia de datos, el aprendizaje automático (machine learning), la inteligencia artificial y la computación científica. Su amplio ecosistema de bibliotecas (librerías) y su comunidad activa y global lo convierten en una herramienta fundamental para startups, gigantes tecnológicos como Google, NASA, y Netflix, e instituciones de investigación, moldeando el desarrollo tecnológico en el siglo XXI[reference:3].</p>
+            </section>
+
+            <section id="historia-y-desarrollo">
+                <h2 class="titulo">2. Historia y desarrollo</h2>
+
+                <section id="historia-origenes">
+                    <h3>2.1 Orígenes: El proyecto navideño de Guido van Rossum</h3>
+                    <p>A finales de 1989, Guido van Rossum, trabajando en el Centrum Wiskunde & Informatica (CWI) en los Países Bajos, buscaba un proyecto que le mantuviera ocupado durante las vacaciones de Navidad. Inspirado por su trabajo previo en el lenguaje de programación <strong>ABC</strong> (un lenguaje diseñado para la enseñanza, que resultó poco práctico por las limitaciones de hardware de la época), se propuso crear un sucesor que fuera a la vez potente y fácil de usar[reference:4][reference:5]. El resultado fue el inicio del desarrollo de Python. Su objetivo principal era crear un lenguaje de scripting para el sistema operativo Amoeba que tuviera una sintaxis clara y legible, similar a un pseudocódigo ejecutable, una característica que sigue siendo su sello de identidad[reference:6]. La primera versión pública, <strong>Python 0.9.0</strong>, fue lanzada en febrero de 1991, y ya incluía características fundamentales como módulos, clases, manejo de excepciones y tipos de datos dinámicos[reference:7][reference:8].</p>
+                </section>
+
+                <section id="historia-evolucion">
+                    <h3>2.2 Evolución: Python 2, Python 3 y la transición</h3>
+                    <p>Python continuó evolucionando a lo largo de la década de 1990, con el lanzamiento de Python 1.0 en 1994, que introdujo características como la comprensión de listas y un sistema de módulos más robusto[reference:9]. El crecimiento de internet y la comunidad de código abierto impulsaron su popularidad. En el año 2000, se lanzó <strong>Python 2.0</strong>, que trajo mejoras significativas como la recolección de basura (garbage collection) y el soporte para Unicode, consolidándolo como una herramienta seria para proyectos de gran escala[reference:10][reference:11].</p>
+                    <p>Un hito crucial en la historia del lenguaje fue el lanzamiento de <strong>Python 3.0</strong> en diciembre de 2008. Esta versión fue diseñada para corregir fallos de diseño fundamentales y limpiar la sintaxis, pero a costa de <strong>romper la compatibilidad hacia atrás</strong> con Python 2. Esto significaba que el código escrito para Python 2 no funcionaría directamente en Python 3. Aunque necesaria, la transición fue larga y dolorosa, generando controversia y ralentizando la adopción de Python 3 durante varios años. Finalmente, con el fin del soporte para Python 2 el 1 de enero de 2020, la comunidad completó la migración, y hoy Python 3 es el estándar indiscutible del lenguaje[reference:12].</p>
+                </section>
+
+                <section id="historia-hitos">
+                    <h3>2.3 Hitos clave y cronología</h3>
+                    <ul>
+                        <li><strong>1991:</strong> Lanzamiento de Python 0.9.0 (primer prototipo público)[reference:13].</li>
+                        <li><strong>1994:</strong> Lanzamiento de Python 1.0[reference:14].</li>
+                        <li><strong>2000:</strong> Lanzamiento de Python 2.0[reference:15].</li>
+                        <li><strong>2008:</strong> Lanzamiento de Python 3.0, incompatible con versiones anteriores[reference:16].</li>
+                        <li><strong>2018:</strong> Guido van Rossum anuncia su retiro como "Benevolente Dictador Vitalicio" (BDFL) tras 30 años al frente del proyecto[reference:17].</li>
+                        <li><strong>2020:</strong> Fin del soporte oficial para Python 2.7, marcando el fin de la era Python 2.</li>
+                        <li><strong>2024 - 2026:</strong> Python 3.13 introduce la opción experimental para ejecutar sin el GIL, y Python 3.14 la consolida, mejorando el rendimiento en sistemas multinúcleo[reference:18].</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section id="principios-y-caracteristicas">
+                <h2 class="titulo">3. Principios de funcionamiento y características principales</h2>
+
+                <section id="principios-filosofia">
+                    <h3>3.1 Filosofía de diseño: El Zen de Python</h3>
+                    <p>La filosofía de diseño de Python está resumida en el <strong>PEP 20 (Python Enhancement Proposal)</strong>, más conocido como <strong>"El Zen de Python"</strong>. Escrito por Tim Peters en 1999, es una colección de 19 aforismos que sirven como guía para los desarrolladores y para la evolución del propio lenguaje[reference:19][reference:20]. Algunos de sus principios más influyentes son:</p>
+                    <ul>
+                        <li><em>"Bello es mejor que feo."</em> (Beautiful is better than ugly.)[reference:21]</li>
+                        <li><em>"Explícito es mejor que implícito."</em> (Explicit is better than implicit.)[reference:22]</li>
+                        <li><em>"Simple es mejor que complejo."</em> (Simple is better than complex.)[reference:23]</li>
+                        <li><em>"La legibilidad es importante."</em> (Readability counts.)[reference:24]</li>
+                        <li><em>"Debería haber una —y preferiblemente solo una— manera obvia de hacerlo."</em> (There should be one-- and preferably only one --obvious way to do it.)[reference:25]</li>
+                    </ul>
+                </section>
+
+                <section id="principios-sintaxis">
+                    <h3>3.2 Sintaxis y características técnicas</h3>
+                    <p>La sintaxis de Python es una de sus características más distintivas y valoradas. A diferencia de otros lenguajes que usan llaves o palabras clave para definir bloques de código, Python utiliza la <strong>indentación (espacios en blanco) para estructurar el código</strong>. Esto hace que el código sea visualmente limpio y obliga a los programadores a escribir código bien formateado, mejorando su legibilidad y mantenibilidad[reference:26]. Algunas características técnicas clave incluyen:</p>
+                    <ul>
+                        <li><strong>Tipado dinámico y fuerte:</strong> No es necesario declarar explícitamente el tipo de una variable (dinámico), pero una vez que una variable tiene un valor, su tipo no cambiará de forma implícita e inesperada (fuerte)[reference:27].</li>
+                        <li><strong>Interpretado:</strong> El código Python se ejecuta línea por línea mediante un intérprete, lo que facilita la depuración y el prototipado rápido, aunque puede ser más lento que los lenguajes compilados[reference:28][reference:29].</li>
+                        <li><strong>Manejo automático de memoria:</strong> Cuenta con un recolector de basura que libera automáticamente la memoria que ya no se utiliza, simplificando el desarrollo y reduciendo errores comunes como las fugas de memoria[reference:30].</li>
+                        <li><strong>Biblioteca estándar extensa:</strong> Incluye módulos para una gran variedad de tareas (expresiones regulares, manejo de archivos, acceso a internet, interfaces gráficas con Tkinter, etc.), lo que le ha valido el apodo de "baterías incluidas".</li>
+                    </ul>
+                </section>
+
+                <section id="principios-paradigmas">
+                    <h3>3.3 Paradigmas de programación</h3>
+                    <p>Python es un lenguaje <strong>multiparadigma</strong>, lo que significa que soporta varios estilos de programación, dando a los desarrolladores la flexibilidad de elegir el más adecuado para su problema[reference:31][reference:32]. Los principales paradigmas que soporta son:</p>
+                    <ul>
+                        <li><strong>Orientación a Objetos (POO):</strong> Todo en Python es un objeto. Soporta conceptos fundamentales como clases, herencia, encapsulación y polimorfismo, lo que permite crear código modular y reutilizable[reference:33].</li>
+                        <li><strong>Programación Imperativa / Estructurada:</strong> Soporta la ejecución de instrucciones secuenciales, el uso de bucles (`for`, `while`), condicionales (`if/elif/else`) y funciones, que son la base de la programación tradicional[reference:34].</li>
+                        <li><strong>Programación Funcional:</strong> Aunque no es un lenguaje puramente funcional como Haskell, Python incorpora características de este paradigma, como funciones de orden superior, funciones lambda, y herramientas como `map`, `filter` y `reduce`, permitiendo un estilo de programación declarativo y conciso[reference:35].</li>
+                    </ul>
+                </section>
+            </section>
+
+            <section id="impacto-y-legado">
+                <h2 class="titulo">4. Impacto y legado</h2>
+
+                <section id="impacto-industria">
+                    <h3>4.1 Impacto en la industria y la economía</h3>
+                    <p>El impacto de Python en la industria tecnológica es monumental. Se ha convertido en el lenguaje <strong>"pegamento"</strong> de la era digital, utilizado por gigantes como <strong>Google, Netflix, Spotify, Instagram y NASA</strong> para sus sistemas críticos. Su legibilidad y facilidad de uso aceleran los ciclos de desarrollo, mientras que su capacidad para integrarse con lenguajes de bajo nivel (C/C++) le permite manejar cargas de trabajo intensivas en cálculo[reference:36]. Este dominio se refleja en cifras: según encuestas de Stack Overflow, más del 51% de los desarrolladores profesionales utilizan Python, y su ecosistema impulsa mercados que van desde los 18.210 millones de dólares en frameworks web hasta los 7.630 millones en herramientas ETL[reference:37][reference:38]. Su reinado en áreas como la ciencia de datos y la inteligencia artificial es tal que bibliotecas como <strong>NumPy, Pandas, Scikit-learn, TensorFlow y PyTorch</strong> se han convertido en la columna vertebral de la investigación y el desarrollo en estos campos[reference:39].</p>
+                </section>
+
+                <section id="impacto-educativo">
+                    <h3>4.2 Impacto educativo y social</h3>
+                    <p>Su sintaxis clara y su naturaleza interpretada han convertido a Python en el lenguaje de facto para la enseñanza de la programación en universidades y escuelas de todo el mundo, reemplazando a lenguajes más antiguos como Java o C++. Su uso en campos científicos no técnicos, como la biología, la economía o la lingüística computacional, ha democratizado el acceso a la computación, permitiendo a investigadores y profesionales de diversas disciplinas escribir sus propios programas para analizar datos y automatizar tareas[reference:40][reference:41]. Además, comunidades como <strong>PyLadies</strong> han surgido para promover la diversidad y la inclusión, apoyando a mujeres y otros grupos subrepresentados para que participen activamente en la comunidad tecnológica[reference:42].</p>
+                </section>
+
+                <section id="debate-futuro">
+                    <h3>4.3 Debates, controversias y futuro</h3>
+                    <p>A pesar de su éxito, Python no está exento de críticas y debates. Su principal punto débil es el <strong>rendimiento</strong>. Al ser un lenguaje interpretado, es significativamente más lento que lenguajes compilados como C o Rust, especialmente en tareas intensivas en CPU. Esto se debe en parte al <strong>Global Interpreter Lock (GIL)</strong>, un mecanismo de sincronización que limita la ejecución de múltiples hilos nativos en sistemas multinúcleo, convirtiéndolo en un cuello de botella para la computación paralela[reference:43][reference:44]. Esta limitación ha impulsado la búsqueda de alternativas como <strong>PyPy</strong> (con un compilador JIT), <strong>Jython</strong> o <strong>IronPython</strong>, y ha llevado a la comunidad a trabajar en eliminar el GIL de forma experimental, un hito que ha comenzado a materializarse en las versiones Python 3.13 y 3.14[reference:45][reference:46].</p>
+                    <p>En la actualidad, el futuro de Python es un tema de intenso debate. Si bien mantiene una posición dominante, especialmente en IA y ciencia de datos, enfrenta la presión de nuevos lenguajes como <strong>Rust</strong> (por su seguridad y rendimiento) y <strong>Mojo</strong> (diseñado como un superconjunto de Python para computación de alto rendimiento en IA)[reference:47][reference:48]. Algunos analistas señalan una ligera disminución en su cuota de mercado, mientras que otros sostienen que su vasto ecosistema, su comunidad y su papel como lenguaje de orquestación en sistemas de IA garantizan su relevancia durante muchos años[reference:49]. La evolución del lenguaje, con la eliminación del GIL y las mejoras continuas en rendimiento, apunta a que Python seguirá adaptándose y siendo una herramienta fundamental en el futuro de la tecnología.</p>
+                </section>
+            </section>
+
+            <section id="vease-tambien">
+                <h2 class="titulo">5. Véase también</h2>
+                <ul>
+                    <li><a href="#">Guido van Rossum</a></li>
+                    <li><a href="#">Zen de Python</a></li>
+                    <li><a href="#">CPython</a></li>
+                    <li><a href="#">Django (framework)</a></li>
+                    <li><a href="#">NumPy</a></li>
+                    <li><a href="#">PyPI (Python Package Index)</a></li>
+                    <li><a href="#">Programación funcional</a></li>
+                </ul>
+            </section>
+
+            <section id="bibliografia">
+                <h2 class="titulo">6. Bibliografía y fuentes</h2>
+                <ol>
+                    <li>Historia de Python. Wikipedia. <a href="https://es.wikipedia.org/wiki/Historia_de_Python">https://es.wikipedia.org/wiki/Historia_de_Python</a></li>
+                    <li>Guido van Rossum. Wikipedia. <a href="https://es.wikipedia.org/wiki/Guido_van_Rossum">https://es.wikipedia.org/wiki/Guido_van_Rossum</a></li>
+                    <li>PEP 20 – The Zen of Python. Python.org. <a href="https://peps.python.org/pep-0020/">https://peps.python.org/pep-0020/</a></li>
+                    <li>Luis Llamas. "Historia y Evolución de Python". <a href="https://www.luisllamas.es/historia-evolucion-python/">https://www.luisllamas.es/historia-evolucion-python/</a></li>
+                    <li>Q2B Studio. "Por qué Python lidera en tecnología empresarial en 2025". <a href="https://www.q2bstudio.com/nuestro-blog/212929/python-lidera-en-tecnologia-empresarial-en-2025">https://www.q2bstudio.com/nuestro-blog/212929/python-lidera-en-tecnologia-empresarial-en-2025</a></li>
+                    <li>Integrate.io. "Python ETL Framework Usage Trends — 15 Statistics Shaping Data Pipeline Development in 2026". <a href="https://www.integrate.io/blog/python-etl-framework-usage-trends/">https://www.integrate.io/blog/python-etl-framework-usage-trends/</a></li>
+                    <li>Enigma Security. "¿Está a punto de reventar la burbuja de Python?". <a href="https://enigmasecurity.cl/tendencias-1943/">https://enigmasecurity.cl/tendencias-1943/</a></li>
+                    <li>DS Analysis. "Python y su Impacto en la Inteligencia Artificial y Machine Learning". <a href="https://dsanalysis.com/python-y-su-impacto-en-la-inteligencia-artificial-y-machine-learning/">https://dsanalysis.com/python-y-su-impacto-en-la-inteligencia-artificial-y-machine-learning/</a></li>
+                    <li>Alternative Python implementations. Python.org. <a href="https://www.python.org/download/alternatives/">https://www.python.org/download/alternatives/</a></li>
+                    <li>JetBrains Blog. "Python más rápido: desbloqueamos el Global Interpreter Lock de Python". <a href="https://blog.jetbrains.com/pycharm/2025/10/no-gil-python/">https://blog.jetbrains.com/pycharm/2025/10/no-gil-python/</a></li>
+                    <li>WebProNews. "The Programming Languages That Will Power AI — And the Ones That Won’t Survive It". <a href="https://www.webpronews.com/the-programming-languages-that-will-power-ai-and-the-ones-that-wont-survive-it/">https://www.webpronews.com/the-programming-languages-that-will-power-ai-and-the-ones-that-wont-survive-it/</a></li>
+                </ol>
+            </section>
+
+        </article>
     </main>
+    <hr>
     <footer>
         <div>
-            <h2>Contactos</h2>
+            <h2 class="titulo">Contactos</h2>
             <ul>
                 <li>Teléfono: +58 426 4572138</li>
                 <li>Correo Electrónico: skellent@outlook.com</li>
@@ -74,11 +189,13 @@
             </ul>
         </div>
         <article>
-            <h2>Acerca de</h2>
-            <p>Skell's Wiki es una enciclopedia en línea creada por Skellent, un apasionado de la tecnología y el conocimiento. Nuestro objetivo es proporcionar información precisa y actualizada sobre una amplia variedad de temas, desde ciencia y tecnología hasta historia y cultura. Nos esforzamos por ser una fuente confiable de información para nuestros usuarios, fomentando el aprendizaje y la curiosidad en todo el mundo.</p>
+            <h2 class="titulo">Acerca de</h2>
+            <p>Skell's eWiki es una enciclopedia en línea creada por Skellent, un apasionado de la tecnología y el conocimiento. Nuestro objetivo es proporcionar información precisa y actualizada sobre una amplia variedad de temas, desde ciencia y tecnología hasta historia y cultura. Nos esforzamos por ser una fuente confiable de información para nuestros usuarios, fomentando el aprendizaje y la curiosidad en todo el mundo.</p>
             <br>
-            <p>&copy; 2026 Skell's Wiki. Todos los derechos reservados.</p>
+            <p>&copy; 2026 Skell's eWiki. Todos los derechos reservados.</p>
         </article>
     </footer>
+    <a id="back" href="/">Volver</a>
+    <a id="back-up" href="#up">↑</a>
 </body>
 </html>
